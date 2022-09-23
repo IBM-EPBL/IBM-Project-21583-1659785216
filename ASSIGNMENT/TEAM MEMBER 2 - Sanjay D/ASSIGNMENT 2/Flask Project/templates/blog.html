@@ -1,0 +1,72 @@
+{% extends 'nav.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <title>About Page</title>
+    <script
+			id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-modules="sap.m.library"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async" >
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				new sap.m.Text({
+					text : "SAPUI5 is loaded successfully!"
+				}).placeAt("content");
+			});
+		</script>
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+
+    <div id="container">
+        	
+            <h2>About Us</h2>
+                <p>Peluso Construction, Inc. is a general contractor with over 20 years experience in commercial renovations in healthcare and other specialized settings since 1985.
+                Peluso Construction, Inc. offers competitive pricing through competitive bidding. We provide project management of all phases of the construction project so the client can focus on service delivery.</p>
+            <h3>Our Team</h3>
+                    <p>Peluso Construction is comprised of a small team with over 20 years experience in commercial renovations in healthcare and other specialized settings.</p>
+                                    <ul>
+                                        <li><strong>Michael Peluso, </strong><em>President</em> 
+                                        <br/>Has been contracting commercial construction projects since 1985</li>
+                                    
+                                        <li><strong>Dennis Atkinson, </strong><em>Project Manager</em> 
+                                        <br/>Has been with Peluso Construction since 1985</li>
+                                    
+                                        <li><strong>Shawn Carignan, </strong><em>Project Manager</em> 
+                                        <br/>Has over 20 years experience in health care settings- joined Peluso Construction in 2008</li>
+                                    
+                                        <li><strong>Keith Long, </strong><em>Project Supervisor</em> 
+                                        <br/>Has been with Peluso Construction since 	1995</li>
+                                    
+                                        <li><strong>James Peluso, </strong><em>Project Supervisor</em> 
+                                        <br/>Has been with Peluso Construction since 2006</li>
+                                    
+                                        <li><strong>Jeffrey Tully, </strong><em>Project Supervisor</em> 
+                                        <br/>Has been with Peluso Construction since 2007</li>
+                                    </ul>
+                <h3>Our Associates</h3>
+                                <p>In addition to our team of experts, we have long standing relationships with professional architects and engineers for design build projects, as well as the finest mechanical, plumbing, electrical, drywall, flooring and painting subcontractors located in eastern and central Massachusetts.</p>
+    
+        </div> <!-- END #mainContent -->
+        <footer>
+            Peluso Construction, Inc. is fully licensed (CS00011737) and insured.
+        </footer>
+    </div> <!-- End #container -->
+    
+              
+        
+    {% endblock %}
+    
+</body>
+</html>
