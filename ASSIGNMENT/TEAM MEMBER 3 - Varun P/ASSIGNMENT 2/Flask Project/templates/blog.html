@@ -1,0 +1,118 @@
+{% extends 'nav.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <title>About Page</title>
+  
+    <style>
+        body{
+	background-color:#232a36;
+}
+
+.header{
+	position:absolute;
+	top:0;
+	background-color:#232a36;
+	color:white;
+	border-bottom:2px solid white;
+	width: 100%
+}
+
+#square{	
+	position:absolute;
+	top:10%;
+	left:25%;
+	right:25%;
+	height:85%;
+	width:50%;
+	background-color:#232a36;
+	border:5px solid black;
+}
+
+.infoTitle{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+	border: 2.4px solid black;
+	background-color:white;
+	Width: 95%;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+.info{
+	display:block;
+	overflow:scroll;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 5px;
+	border: 2.4px solid black;
+	background-color:white;
+	Width: 95%;
+	height:90%;
+	font-size:1.2em;
+}
+
+p{
+	padding:02%;
+}
+
+#footer{
+	position:absolute;
+	bottom:0;
+	right:36%;
+	background-color:white;
+	border: 2.5px solid black;
+	
+}
+
+.link{
+	color:black;
+	font-family:Avenir Book;	
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+}
+.inbetween{
+	color:black;
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+}
+      </style>
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+
+    <div class="about-section" style="text-align: center;">
+        <h1>About Us Page</h1>
+       
+
+<div id="square">
+	<div class="infoTitle">About Us</div>
+	<div class="info">
+	<p>Fashion has the ability to change and shape lives through its personal connection to us all. We all have to wear clothes and every piece of clothing we buy represents a personal choice.</p>
+	<p>We developers make application at thier best,so the users get a feel good platform to use </p>
+	</div>
+</div>
+
+ 
+        
+      </div>
+      
+              
+      
+              
+        
+    {% endblock %}
+    
+</body>
+</html>
