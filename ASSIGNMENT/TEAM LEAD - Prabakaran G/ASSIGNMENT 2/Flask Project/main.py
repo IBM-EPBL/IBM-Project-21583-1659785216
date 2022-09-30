@@ -15,9 +15,9 @@ def signup():
 def signin():
     return render_template('signin.html')
 
-@app.route('/blog')
+@app.route('/about')
 def blog():
-    return render_template('blog.html')
+    return render_template('about.html')
 
 
 if __name__ == '__main__':
