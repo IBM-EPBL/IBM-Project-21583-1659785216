@@ -1,5 +1,3 @@
-{% extends 'nav.html' %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +7,34 @@
 
     {% block head %}
     <title>Home page</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <style>
-      h1{
-        color:white;
-      }
-      p{
-        color: white;
-      }
-    </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    
     {% endblock %}
     
 
 </head>
 <body>
     {% block body %} 
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src = "https://img.tek.id/img/content/2020/06/18/30699/kata-ibm-soal-perusahaan-yang-ingin-menjalankan-new-normal-eO4rffwX4q.jpg" height="40px" >
+      </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+          
+          <li><a href="/about" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2" onclick="document.location='/signin'">Sign in</button>
+          <button type="button" class="btn btn-primary" onclick="document.location='/signup'">Signup</button>
+        </div>
+      </header>
+    </div>
     <center>
     <h1><u>Home Page</u></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis, veniam voluptates tempore quidem, doloremque iste corrupti numquam at ab, eaque blanditiis corporis pariatur ullam nam sunt repellendus dicta voluptas?</p>
@@ -33,3 +44,4 @@
     {% endblock %}
 </body>
 </html>
+
