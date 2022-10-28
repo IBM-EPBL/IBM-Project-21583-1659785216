@@ -1,0 +1,22 @@
+
+
+body{
+    background-image: url('https://wallpaperaccess.com/full/3915826.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1{
+    font-size: 40px;
+    color: blue;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
+  
