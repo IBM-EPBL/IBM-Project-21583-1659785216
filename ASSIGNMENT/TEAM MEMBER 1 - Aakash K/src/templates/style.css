@@ -1,0 +1,20 @@
+body{
+	background-color: black;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+  }
+  
+p{
+    margin-top: 150px;
+    text-align : center;
+    color: white;
+}
