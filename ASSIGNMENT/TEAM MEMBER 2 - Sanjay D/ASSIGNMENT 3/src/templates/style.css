@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://t3.ftcdn.net/jpg/02/70/73/76/360_F_270737695_IaAkTD2p7vhmI5YNuYAGYlk2pGVwJUXS.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    
+    background-size: auto;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+img {
+    border: 1pxsolid#ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+}  
