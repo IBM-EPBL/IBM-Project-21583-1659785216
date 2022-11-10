@@ -1,0 +1,17 @@
+body{
+    background-image: url('https://cdn.britannica.com/29/148329-050-269A9EFE/night-sky-Milky-Way-Galaxy.jpg');
+    min-height: 100%;
+    min-width: 100%;
+ 
+
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+img {
+    
+    padding: 5px;
+    width: 250px;
+}  
