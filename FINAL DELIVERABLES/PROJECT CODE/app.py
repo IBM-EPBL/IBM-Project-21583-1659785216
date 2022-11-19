@@ -172,9 +172,9 @@ def ordertracking():
   return render_template('ordertracking.html')
 
 @app.route('/proceed')
-def proceed():
+def proceed(email):
   from_email = Email("*********") #sendgrid registered mail id
-  to_email = To("praba3043@gmail.com")
+  to_email = To(email)
   subject = "Your Payment is Successful"
   content = Content("text/plain", "Thank You For Purchasing our Product. Your order is placed and We will soon let you know about your order status. Stay Connected!")
   mail = Mail(from_email, to_email, subject, content)
