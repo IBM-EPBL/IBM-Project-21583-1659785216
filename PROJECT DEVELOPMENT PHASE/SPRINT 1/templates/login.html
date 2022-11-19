@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>LOGIN</title>
+  
+   <!-- Main Theme Styles + Bootstrap-->
+   <link rel="stylesheet" media="screen" href="https://cartzilla.createx.studio/css/theme.min.css">
+   
+  
+</head>
+<body style="background-image: url('https://t3.ftcdn.net/jpg/01/17/33/22/360_F_117332203_ekwDZkViF6M3itApEFRIH4844XjJ7zEb.jpg');background-size: cover;">
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-md-10 mx-auto col-lg-5">
+        
+        <form class="p-4 p-md-5 border rounded-3 bg-light" action = "/checkrec" method = "POST">
+          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="/login" role="tab"
+                aria-controls="pills-login" aria-selected="true">User</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="/adminlogin" role="tab"
+                aria-controls="pills-register" aria-selected="false">Admin</a>
+            </li>
+          </ul>
+          
+          <h4 style="text-align: center;">LOGIN</h4>
+          <h6 style="text-align: center; color: red;">{{msg}}</h6>
+          <!--  <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <small class="text-muted" href="/register">Forgot Password?</small>
+          
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+          <hr class="my-4">
+          <small class="text-muted">Don't have an Account? <a href="/register">Sign Up</a></small>
+        -->
+        
+            <div class="mb-3">
+              <label class="form-label" for="si-email">Email address</label>
+              <input class="form-control" type="email" name="email" placeholder="johndoe@example.com" required>
+              <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="si-password">Password</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" name="password" required>
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-3 d-flex flex-wrap justify-content-between">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="si-remember">
+                <label class="form-check-label" for="si-remember">Remember me</label>
+              </div><a class="fs-sm" href="#">Forgot password?</a>
+            </div>
+            <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            
+            <hr class="my-2">
+            <small class="text-muted">Don't have an Account? <a href="/register">Sign Up</a></small>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+ 
+
+ 
+
+  
+</body>
+</html>
