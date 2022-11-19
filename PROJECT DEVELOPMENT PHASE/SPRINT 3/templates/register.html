@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="https://cartzilla.createx.studio/css/theme.min.css">
+  <title>REGISTER</title>
+</head>
+<body style="background-image: url('https://t3.ftcdn.net/jpg/01/17/33/22/360_F_117332203_ekwDZkViF6M3itApEFRIH4844XjJ7zEb.jpg');background-size: cover;">
+   
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-md-10 mx-auto col-lg-5">
+        
+        <form class="p-4 p-md-5 border rounded-3 bg-light" action = "/addrec" method = "POST">
+          <h4 style="text-align: center;">REGISTER</h4>
+          <h6 style="text-align: center; color: red;">{{msg}}</h6>
+          <div class="mb-3">
+            <label class="form-label" for="su-name">Full name</label>
+            <input class="form-control" type="text" name="username" placeholder="John Doe" required>
+            <div class="invalid-feedback">Please fill in your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="su-email">Email address</label>
+            <input class="form-control" type="email" name="email" placeholder="johndoe@example.com" required>
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="su-password">Password</label>
+            <div class="password-toggle">
+              <input class="form-control" type="password" name="password" required>
+              <label class="password-toggle-btn" aria-label="Show/hide password">
+                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+              </label>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+
+
+          <hr class="my-2">
+          <small class="text-muted">Already an user? <a href="/login">Sign In</a></small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  
+</body>
+</html>
